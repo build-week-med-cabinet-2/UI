@@ -129,6 +129,7 @@ table {
 * {
   margin: 0;
   padding: 0;
+  border: 1px solid red !important;
 }
 html {
   font-size: 62.5%;
@@ -198,7 +199,7 @@ img {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #3b5998;
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
@@ -221,6 +222,15 @@ img {
   right: 22px;
   font-size: 36px;
   margin-left: 50px;
+}
+.search-box {
+  margin: 8px 0 0 0;
+  padding-top: 10px;
+}
+input [type=text] {
+  padding: 7px;
+  border: none;
+  font-size: 16px;
 }
 .footer {
   width: 100%;
