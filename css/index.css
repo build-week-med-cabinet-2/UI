@@ -296,4 +296,9 @@ input [type=text] {
   width: 85%;
   height: 500px;
   margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popular-strains .examples-container {
+  display: flex;
 }
