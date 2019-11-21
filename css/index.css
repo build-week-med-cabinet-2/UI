@@ -143,7 +143,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Arial', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -173,6 +173,15 @@ img {
   justify-content: space-between;
   border-bottom: 2px dashed silver;
 }
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo h1 {
+  font-size: 25px;
+  color: white;
+}
 .navbar a {
   float: left;
   display: block;
@@ -191,21 +200,6 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
-}
-.navbar ul .logo {
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-li.logo {
-  display: flex;
-  max-height: 100%;
-}
-li.logo a img {
-  height: 63px;
-  width: 63px;
 }
 .side-nav {
   height: 100%;
@@ -265,7 +259,8 @@ footer .footer-nav {
 footer .footer-nav a {
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
+  color: white;
 }
 footer .footer-nav a:hover {
   background-color: #ddd;
@@ -296,16 +291,40 @@ footer div p {
   justify-content: flex-end;
   margin: 20px;
 }
+.landing .landing-content {
+  margin: 20px;
+  padding: 10px;
+  color: #212529;
+  font-weight: 2rem;
+}
+.landing .landing-content h1 {
+  padding: 20px 20px 20px 0;
+}
+.landing .landing-content .landing-btn-groups {
+  display: flex;
+  justify-content: flex-start;
+}
+.landing .landing-content .landing-btn-groups a {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: #f4f4f4;
+  color: #17A2B8;
+  border: 5px solid #17A2B8;
+}
 .how-it-works {
   width: 85%;
   height: 450px;
-  margin: 0 20px 20px 20px;
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .how-it-works h2 {
   font-size: 4rem;
+  margin: 20px 0;
 }
 .how-it-works .features {
   display: flex;
@@ -313,9 +332,12 @@ footer div p {
   height: 80%;
 }
 .how-it-works .features .feature-boxes {
+  width: 30%;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid #38B2AC;
 }
 .how-it-works .features .feature-boxes i {
   font-size: 10rem;
@@ -326,6 +348,10 @@ footer div p {
   margin: 20px;
   padding: 10px;
 }
+.how-it-works .features .feature-boxes p {
+  margin: 10px;
+  padding: 10px;
+}
 .popular-strains {
   width: 85%;
   height: 350px;
@@ -333,9 +359,14 @@ footer div p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 2px solid #38B2AC;
+  border-right: 2px solid #38B2AC;
+  border-left: 2px solid #38B2AC;
+  border-bottom: 5px solid #af7817;
 }
 .popular-strains h3 {
-  font-size: 2rem;
+  font-size: 4rem;
+  margin: 20px 0;
 }
 .popular-strains .examples-container {
   display: flex;
@@ -346,8 +377,9 @@ footer div p {
 .popular-strains .examples-container .example-strains {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: none;
+  align-items: center;
 }
 .explore-more {
   width: 80%;
@@ -355,6 +387,7 @@ footer div p {
   overflow: auto;
   display: flex;
   align-items: center;
+  margin: 40px 30px 20px 30px;
 }
 .explore-more a {
   color: white;
@@ -369,9 +402,9 @@ footer div p {
 .about-this-project .this-project-container {
   width: 100%;
   display: flex;
-  flex-wrap: none;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: none;
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
@@ -397,9 +430,9 @@ footer div p {
   max-height: 200px;
   margin-top: 30px;
   display: flex;
-  flex-wrap: none;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: none;
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
@@ -410,9 +443,9 @@ footer div p {
 }
 .about-this-project .about-items {
   display: flex;
-  flex-wrap: none;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: none;
   align-items: center;
   align-items: flex-start;
   max-width: 1300px;
@@ -440,9 +473,9 @@ footer div p {
   max-width: 1300px;
   margin: 20px auto;
   display: flex;
-  flex-wrap: none;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: none;
   align-items: center;
 }
 @media (min-width: 700px) {
@@ -460,9 +493,9 @@ footer div p {
 }
 .meet-the-team .team {
   display: flex;
-  flex-wrap: none;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: none;
   align-items: center;
   margin: 20px 0;
   padding: 10px 30;
