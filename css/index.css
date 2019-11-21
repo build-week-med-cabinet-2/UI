@@ -171,11 +171,13 @@ img {
   height: 63px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed #DCDCDC;
 }
 .navbar .logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: none;
   align-items: center;
   padding-left: 9rem;
 }
@@ -191,10 +193,12 @@ img {
 .navbar a {
   float: left;
   display: block;
+  text-decoration: none;
+  color: #38B2AC;
+  font-size: 2rem;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
 }
 .navbar a:hover {
@@ -228,13 +232,15 @@ img {
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
+  color: #38B2AC;
+  font-size: 2rem;
   font-size: 22px;
   color: #ccc;
   display: block;
   transition: 0.3s;
 }
 .side-nav a:hover {
-  color: #fff;
+  color: #FFFFFF;
 }
 .side-nav .btn-close {
   position: absolute;
@@ -258,8 +264,9 @@ footer {
   border-top: 2px dashed silver;
   background: #38B2AC;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  flex-wrap: none;
   align-items: center;
 }
 footer .footer-nav {
@@ -269,9 +276,10 @@ footer .footer-nav {
   padding-top: 20px;
 }
 footer .footer-nav a {
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  color: #38B2AC;
+  font-size: 2rem;
+  font-size: 12px;
   color: #FFFFFF;
 }
 footer .footer-nav a:hover {
@@ -291,6 +299,7 @@ footer div p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: none;
   align-items: center;
 }
 .landing {
@@ -319,6 +328,7 @@ footer div p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-wrap: none;
   }
 }
 .landing .landing-content h1 {
@@ -331,13 +341,17 @@ footer div p {
 }
 .landing .landing-content .landing-btn-groups {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: none;
 }
 .landing .landing-content .landing-btn-groups a {
   margin: 5px;
   padding: 10px;
-  font-size: 1.3rem;
   text-decoration: none;
+  color: #38B2AC;
+  font-size: 2rem;
+  font-size: 1.3rem;
   background: #f4f4f4;
   color: #17A2B8;
   border: 5px solid #17A2B8;
@@ -348,6 +362,7 @@ footer div p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: none;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -357,7 +372,9 @@ footer div p {
 }
 .how-it-works .features {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: none;
 }
 @media (max-width: 768px) {
   .how-it-works .features {
@@ -429,7 +446,9 @@ footer div p {
 }
 .popular-strains .examples-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: none;
   width: 100%;
   padding: 50px;
 }
@@ -466,8 +485,10 @@ footer div p {
   }
 }
 .explore-more a {
-  color: white;
   text-decoration: none;
+  color: #38B2AC;
+  font-size: 2rem;
+  color: white;
   font-size: 1.6rem;
   padding: 10px;
   background: #17A2B8;
@@ -536,11 +557,11 @@ footer div p {
   height: 170px;
 }
 .about-this-project .about-items {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -602,10 +623,6 @@ footer div p {
 .meet-the-team h2 {
   text-align: center;
 }
-.meet-the-team h4 {
-  margin: 5px 0;
-  color: grey;
-}
 .meet-the-team .team {
   margin: 20px 0;
   padding: 10px 30;
@@ -643,12 +660,19 @@ footer div p {
   margin: 10px 20px;
   text-align: center;
 }
+.meet-the-team .team .team-info h3 {
+  font-size: 1.4rem;
+}
+.meet-the-team .team .team-info h4 {
+  margin: 5px 0;
+  color: grey;
+}
 .meet-the-team .social-medias a {
-  font-size: 3.5rem;
-  margin: 5px 10px;
   text-decoration: none;
   color: #38B2AC;
   font-size: 2rem;
+  font-size: 3.5rem;
+  margin: 5px 10px;
 }
 .meet-the-team img {
   width: 100px;

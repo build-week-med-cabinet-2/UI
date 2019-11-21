@@ -1,12 +1,14 @@
 // Mixins in here
-
+.max-width(){
+    max-width: @max-content-width;
+    margin: 0 auto;
+}
 
 .flex(@direction, @justify, @flex){
     display:flex;
     flex-direction: @direction;
     justify-content: @justify;
     flex-wrap: @flex;
-    align-items: center;
 }
 
 .link(){
@@ -15,7 +17,3 @@
     font-size: 2rem;
 }
 
-.limit-max-width(){
-    max-width: @max-content-width;
-    margin: 0 auto;
-}
