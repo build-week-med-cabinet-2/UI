@@ -2,9 +2,7 @@ footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: @blue-green;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  .flex(column, center, none);
   align-items: center;
 
   .footer-nav {
@@ -14,9 +12,9 @@ footer {
     padding-top: 20px;
 
     a {
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
+      //padding: 14px 16px;
+      .link();
+      font-size: 12px;
       color: @white;
 
       &:hover {

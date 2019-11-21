@@ -3,9 +3,7 @@
   transition: margin-left 0.5s;
   padding: 20px;
   overflow: auto;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  .flex(column, space-evenly, none);
   align-items: center;
 }
 
@@ -30,9 +28,7 @@
     font-weight: 2rem;
 
     @media @tablet {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      .flex(column, flex-end, none);
     }
 
     h1 {
@@ -44,14 +40,13 @@
     }
 
     .landing-btn-groups {
-      display: flex;
-      justify-content: flex-start;
+      .flex(row, flex-start, none);
 
       a {
         margin: 5px;
         padding: 10px;
+        .link();
         font-size: 1.3rem;
-        text-decoration: none;
         background: @greyish-white;
         color: @eastern-blue;
         border: 5px solid @eastern-blue;
@@ -65,9 +60,7 @@
 .how-it-works {
   width: 85%;
   padding: 0 20px 20px 20px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
+  .flex(column, center, none);
   align-items: center;
   margin-bottom: 20px;
   
@@ -78,8 +71,7 @@
   }
   
   .features {
-    display: flex;
-    justify-content: space-between;
+    .flex(row, space-between, none);
 
     @media @tablet {
       flex-direction: column;
@@ -152,8 +144,7 @@
   }
 
   .examples-container {
-    display: flex;
-    justify-content: space-between;
+    .flex(row, space-between, none);
     width: 100%;
     padding: 50px;
 
@@ -165,6 +156,7 @@
 
     .example-strains {
       .flex(column, space-between, none);
+      align-items: center;
 
       @media @phone {
         margin: 20px;
@@ -186,8 +178,8 @@
   }
   
   a {
+    .link();
     color: white;
-    text-decoration: none;
     font-size: 1.6rem;
     padding: 10px;
     background:#17A2B8;

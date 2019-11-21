@@ -7,10 +7,9 @@
 
     .this-project-container{
         width: 100%;
-
         .flex(column, space-evenly, none);
-
-        .limit-max-width();
+        align-items: center;
+        .max-width();
 
         h2{
             margin: 10px 0;
@@ -36,9 +35,9 @@
         max-height: 200px;
         margin-top: 30px;
         padding-top: 2rem;
-
         .flex(row, space-evenly, none);
-        .limit-max-width();
+        align-items: center;
+        .max-width();
 
         @media @phone {
             display: none;
@@ -52,9 +51,8 @@
 
     .about-items{
         align-items: center;
-
         .flex(row, space-evenly, wrap);
-        .limit-max-width();
+        .max-width();
 
         @media @tablet {
             flex-direction: column;
@@ -92,7 +90,6 @@
 }
 
 .meet-the-team{
-    background: @silver;
     padding: 50px 0 20px 0;
 
     @media @phone {
@@ -103,8 +100,8 @@
         width: 100%;
         max-width: 1300px;
         margin: 20px auto;
-
         .flex(row, space-evenly, wrap);
+        align-items: center;
     
         @media @tablet{
             flex-direction: row;
@@ -116,44 +113,66 @@
         text-align: center;
     }
 
-    h4{
-        margin: 5px 0;
-        color: @grey-text;
-    }
-
     .team{
         margin: 20px 0;
         padding: 10px 30;
-        border-left: 3.5px solid @eastern-blue;
+        border-radius: 50%;
+        border: 3.5px solid @eastern-blue;
         width: 45%;
-
         .flex(column, center, none);
+        align-items: center;
 
         @media @tablet{
             width: 48%;
+            border: none;
+            border-left: 3.5px solid @eastern-blue;
+            border-radius: 0;
         }
 
         @media @phone {
             width: 100%;
+            border: none;
+            border-left: 3.5px solid @eastern-blue;
+            border-radius: 0;
+        }
+
+        @media @desktop {
+            background: @silver;
         }
 
         .team-info{
             margin: 10px 20px;
             text-align: center;
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h4{
+                margin: 5px 0;
+                color: @grey-text;
+            }
         }
     }
 
     .social-medias{
         a{
+            .link();
             font-size: 3.5rem;
             margin: 5px 10px;
-            
-            .link();
         }
     }
     
     img{
         width: 100px;
-        border-radius: 100px;
+        border-radius: 50%;
+
+        @media @tablet {
+            border: 5px inset @blue-green;
+        }
+
+        @media @phone {
+            border: 5px outset @blue-green;
+        }
     }
 }
