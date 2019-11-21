@@ -1,0 +1,136 @@
+.about-this-project{
+    padding: 20px 0;
+
+    .this-project-container{
+        width: 100%;
+
+        .flex(column, space-evenly, none);
+
+        .limit-max-width();
+
+        h2{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .github{
+            width: 5.6rem;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            a{
+                display: inline-block;
+                .link();
+                width: 5.6rem;
+                font-size: 6.5rem;
+            }
+        }
+    }
+
+    .landing2 {
+        max-width: 90%;
+        max-height: 200px;
+        margin-top: 30px;
+        padding-top: 2rem;
+        .flex(row, space-evenly, none);
+        .limit-max-width();
+
+        img {
+            width: 30%;
+            height: 170px;
+        }
+    }
+    
+
+    .about-items{
+        .flex(column, space-evenly, wrap);
+        align-items: flex-start;
+
+        .limit-max-width();
+
+        @media @tablet{
+            flex-direction: row;
+        }
+
+        .about-item{
+            width: 30%;
+            height: 170px;
+            
+            h3{
+                font-size: 1.6rem;
+                
+                sup {
+                    font-size: 2rem;
+                    color: @eastern-blue;
+                }
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        h3{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.meet-the-team{
+    background: @section-background;
+
+    padding: 50px 0 20px 0;
+
+    .team-members{
+        width: 100%;
+        
+        max-width: @max-content-width;
+        margin: 20px auto;
+
+        .flex(column, space-evenly, none);
+    
+        @media @tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    h4{
+        margin: 5px 0;
+        color: @grey-text;
+    }
+
+    .team{
+        .flex(column, center, none);
+
+        margin: 20px 0;
+        padding: 10px 30;
+        border-left: 3.5px solid @eastern-blue;
+        width: 45%;
+
+        @media @tablet{
+            width: 48%;
+        }
+
+        .team-info{
+            margin: 10px 20px;
+            
+            text-align: center;
+        }
+    }
+
+    .social-medias{
+        a{
+            .link();
+            font-size: 3.5rem;
+            margin: 5px 10px;
+        }
+    }
+    img{
+        width: 100px;
+        border-radius: 100px;
+    }
+}

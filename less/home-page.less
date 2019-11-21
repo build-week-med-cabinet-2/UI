@@ -2,6 +2,144 @@
 #main-content {
   transition: margin-left 0.5s;
   padding: 20px;
-  overflow: hidden;
-  width: 100%;
+  overflow: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.landing {
+  background-image: url(../img/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 65vh;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+
+  .landing-content {
+    margin: 20px;
+    padding: 10px;
+    color: @shark;
+    font-weight: 2rem;
+
+    h1 {
+      padding: 20px 20px 20px 0;
+    }
+
+    .landing-btn-groups {
+      display: flex;
+      justify-content: flex-start;
+
+      a {
+        margin: 5px;
+        padding: 10px;
+        font-size: 1.3rem;
+        text-decoration: none;
+        background: @greyish-white;
+        color: @eastern-blue;
+        border: 5px solid @eastern-blue;
+      }
+    }
+
+  }
+
+}
+
+.how-it-works {
+  width: 85%;
+  height: 450px;
+  padding: 0 20px 20px 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  h2 {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+
+    .feature-boxes {
+      width: 30%;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid @blue-green;
+
+      i {
+        font-size: 10rem;
+        margin: 20px;
+      }
+
+      h3 {
+        font-size: 3rem;
+        margin: 20px;
+        padding: 10px;
+      }
+
+      p {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.popular-strains {
+  width: 85%;
+  height: 350px;
+  margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid @blue-green;
+  border-right: 2px solid @blue-green;
+  border-left: 2px solid @blue-green;
+  border-bottom: 5px solid #af7817;
+
+
+  h3 {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+
+  .examples-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+
+    .example-strains {
+      .flex(column, space-between, none)
+    }
+  }
+}
+
+.explore-more {
+  width: 80%;
+  padding: 20px;
+  overflow: auto;
+  display:flex;
+  //flex-direction: column;
+  //justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 30px 20px 30px;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 10px;
+    background:#17A2B8;
+  }
 }

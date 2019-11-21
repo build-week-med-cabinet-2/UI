@@ -1,1 +1,32 @@
 // Mixins in here
+
+
+.flex(@direction, @justify, @flex){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    flex-wrap: @flex;
+    align-items: center;
+}
+
+.button-base(@bg, @color, @font-size){
+    background: @bg;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    color: @color;
+    font-size: @font-size;
+
+    padding: 8px 20px;
+}
+
+.link(){
+    text-decoration: none;
+    color: @blue-green;
+    font-size: 2rem;
+}
+
+.limit-max-width(){
+    max-width: @max-content-width;
+    margin: 0 auto;
+}

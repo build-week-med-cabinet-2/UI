@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>MedCabinet2</title>
   
@@ -14,7 +16,6 @@
 
   <script src="https://kit.fontawesome.com/5796eae216.js" crossorigin="anonymous"></script>
 
-  
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -31,77 +32,96 @@
          </svg>
        </a>
       </div>
-      <form class="search-box">
-        <input type="text" placeholder= "Search">
-        <button class="search-btn">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
+      
+      <div class="logo">
+          <a href="index.html" class ="logo"><img src="img/medical-marijuana.png" name="logo" height="60" width="60"></a>
+          <h1>Med Cabinet</h1>
+      </div>
+      
       <ul class="navbar-nav">
         <li><a href="#">Sign Up</a></li>
         <li><a href="#">Log In</a></li>
         <li><a href="#">Account</a></li>
       </ul>
    </nav> <!-- close navbar div -->
-
-   <!-- <div class="search-box-wrapper">
-     <div class="search-box">
-      <input type="text" class="search-txt" placehold="Search">
-      <div class="search-btn" href="#">
-        <i class="fas fa-search"></i>
-      </div>
-     </div>
-   </div> -->
    
    <div id="side-menu" class="side-nav">
      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-     <a href="#">Home</a>
-     <a href="#">About</a>
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>
      <a href="#">FAQ</a>
      <a href="#">Contact</a>
    </div>
 
    <div id="main-content">
-     <section class="landing">
-       <div class="landing-content">
-         <h1>Getting Started</h1>
-         <div class ="landing-btn-groups">
-           <a href="#" class="main-btn">learn</a>
-           <a href="#" class="main-btn">explore</a>
+       <section class="landing">
+         <div class="landing-content">
+           <h1>Getting Started
+           </h1>
+           <div class ="landing-btn-groups">
+             <a href="#" class="main-btn">learn</a>
+             <a href="#" class="main-btn">explore</a>
+           </div>
          </div>
-       </div>
-     </section> <!-- close landing div -->
+       </section> <!-- close landing div -->
+  
+       <section class="how-it-works">
+         <h2>How It Works</h2>
+         <div class="features">
+           <div class="feature-boxes">
+             <i class="fas fa-file-invoice"></i>
+             <h3>Sign Up Online</h3>
+             <p>No appointment required. Sign up, then fill out your personal infomation. Browse through your dashboard and wait for recommended strains.</p>
+           </div>
+           <div class="feature-boxes">
+             <i class="fas fa-user-md"></i>
+             <h3>Get Connected</h3>
+             <p>You will get connected to our licensed doctor to buy, possess, use and cultivate medical-marijuana. All the documents will be sent by Email within 2 business days.</p>
+           </div>
+           <div class="feature-boxes">
+             <i class="fas fa-store-alt"></i>
+             <h3>Shop</h3>
+             <p>Present your recommendation copy to your local Cannabis Club or dispensary. You can also use your digital copy to purchase from online.</p>
+           </div>
+         </div>
+       </section> <!-- close how-it-works div-->
+       
+       <section class="popular-strains">
+         <h3>Discover some of the most popular strains</h3>
+         <div class="examples-container">
+          <div class="example-strains">
+            <img src="img/Sativa.png" name="sativa leaf">
+            <p>Sativa</p>
+          </div>
+          <div class="example-strains">
+            <img src="img/Hybrid.png" name="hybrid leaf">
+            <p>Hybrid</p>
+          </div>
+          <div class="example-strains">
+            <img src="img/Indica.png" name="indica leaf">
+            <p>Indica</p>
+          </div>
+          <div class="example-strains">
+            <img src="img/ruderalis.png" name="ruderalis leaf">
+            <p>Ruderalis</p>
+          </div>
+         </div>
+       </section> <!-- close popular-strains div -->
+      
+       <div class="explore-more">
+          <a href="#">explore strains</a>
+       </div> <!-- close explore-more div -->
+   </div> <!-- close main-content div -->
+    
+   <footer>
+      <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
 
-     <section class="how-it-works">
-       <h2>How IT WORKS</h2>
-       <div class="features">
-         <div></div>
-         <div></div>
-         <div></div>
-       </div>
-     </section> <!-- close how-it-works div-->
-
-     <section class="popular-strains">
-       <h3>Discover some of the most popular strains</h3>
-       <div class="examples-container">
-        <div class="example-strains">example A</div>
-        <div class="example-strains">example B</div>
-        <div class="example-strains">example C</div>
-       </div>
-       <div class="explore">
-        <a href="#">explore</a>
-       </div>
-     </section> <!-- close popular-strains div -->
-
-     <footer>
-       <div class="footer-nav">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact</a>
-       </div>
-       <p>Copyright @ 2019 Med-cabinet</p>
-     </footer> <!-- close footer div -->
-    </div> <!-- close main-content div -->
+      <div><p>Copyright @ 2019 Med-cabinet</p></div>
+  </footer> <!-- close footer div -->
 </body>
 </html>
