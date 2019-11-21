@@ -576,7 +576,6 @@ footer div p {
   margin-bottom: 8px;
 }
 .meet-the-team {
-  background: #DCDCDC;
   padding: 50px 0 20px 0;
 }
 @media (max-width: 500px) {
@@ -610,7 +609,8 @@ footer div p {
 .meet-the-team .team {
   margin: 20px 0;
   padding: 10px 30;
-  border-left: 3.5px solid #17A2B8;
+  border-radius: 50%;
+  border: 3.5px solid #17A2B8;
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -621,11 +621,22 @@ footer div p {
 @media (max-width: 768px) {
   .meet-the-team .team {
     width: 48%;
+    border: none;
+    border-left: 3.5px solid #17A2B8;
+    border-radius: 0;
   }
 }
 @media (max-width: 500px) {
   .meet-the-team .team {
     width: 100%;
+    border: none;
+    border-left: 3.5px solid #17A2B8;
+    border-radius: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .meet-the-team .team {
+    background: #DCDCDC;
   }
 }
 .meet-the-team .team .team-info {
@@ -641,5 +652,15 @@ footer div p {
 }
 .meet-the-team img {
   width: 100px;
-  border-radius: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .meet-the-team img {
+    border: 5px inset #38B2AC;
+  }
+}
+@media (max-width: 500px) {
+  .meet-the-team img {
+    border: 5px outset #38B2AC;
+  }
 }
