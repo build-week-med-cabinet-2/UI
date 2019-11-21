@@ -5,6 +5,7 @@
   height: 63px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px dashed silver;
   
   a {
     float: left;
@@ -26,8 +27,25 @@
     list-style: none;
     display:flex;
     justify-content: space-between;
-  }
 
+    .logo {
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+
+    }
+  } 
+}
+
+li.logo {
+  display: flex;
+  max-height: 100%;
+  a img {
+    height: 63px;
+    width: 63px;
+  }
 }
 
 .side-nav {

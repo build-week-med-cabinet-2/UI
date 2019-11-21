@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>MedCabinet2</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  
+  <link href="css/index.css" rel="stylesheet">
+  
+  <script type="text/javascript" src="javascript/jsfile.js"></script>
+
+  <script src="https://kit.fontawesome.com/5796eae216.js" crossorigin="anonymous"></script>
+
+  
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+   <nav class="navbar">
+     <div class="open-slide">
+       <a href="#" onclick="openSideMenu()">
+         <svg width="30" height ="30">
+           <path d="M0,5 30,5" stroke="#FFFFFF" stroke-width="5"/>
+           <path d="M0,14 30,14" stroke="#FFFFFF" stroke-width="5"/>
+           <path d="M0,23 30,23" stroke="#3b5998" stroke-width="5"/>
+         </svg>
+       </a>
+      </div>
+      <!-- <form class="search-box">
+        <input type="text" placeholder= "Search">
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form> -->
+      <ul class="navbar-nav">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Account</a></li>
+        <a href="#" class ="logo"><img src="img/medical-marijuana.png" name="logo" height="60" width="60"></a>
+      </ul>
+   </nav> <!-- close navbar div -->
+
+   <!-- <div class="search-box-wrapper">
+     <div class="search-box">
+      <input type="text" class="search-txt" placehold="Search">
+      <div class="search-btn" href="#">
+        <i class="fas fa-search"></i>
+      </div>
+     </div>
+   </div> -->
+   
+   <div id="side-menu" class="side-nav">
+     <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+     <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="#">FAQ</a>
+     <a href="#">Contact</a>
+   </div>
+   <div id="main-content">
+      <section class="about-this-project">
+          <div class="this-project-container">
+              <div>
+                  <h2>About this project</h2>
+                  <div class="github">
+                      <a href="https://github.com/build-week-med-cabinet-2" class="fab fa-github"></a>
+                  </div>
+                  <div class="about-items">
+                      <div class="about-item">
+                          <h3>Lambda Build Week</h3>
+                          <p>This was one of the project that was build in Lambda School Build Week. Students and Project Lead collaborated together using Github, Slack and Trello to complete this project.</p>
+                      </div>
+                      <div class="about-item">
+                          <h3>React App</h3>
+                          <p>There is a sign in and sign up function build in this project. User can create log in to the account and link to a personal dashboard.</p>
+                      </div>
+                      <div class="about-item">
+                          <h3>Other Features</h3>
+                          <p>In the user dashboard user can fill out the forms for ailment which they need help for and the build in strains recommender will provided the recommended strain.  </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="landing2">
+              <img src="img/landing2-1.jpg" alt="bottles of strains">
+              <img src="img/landing2-2.jpg" alt="cookies and some weed!!">
+              <img src="img/landing2-3.jpg" alt="strains of cannabis">
+              </div>
+          </div>
+      </section>
+  
+      <section class="meet-the-team">
+          <h2>Meet the team</h2>
+          <div class="team-members">
+
+              <div class="team">
+                  <img src="img/Navaneeth.jpg" alt="Navaneeth Visagan">
+                  <div class="team-info">
+                      <h3>Machine Learning Engineer</h3>
+                      <h4>Navaneeth Visagan</h4>
+                      <p>Navaneeth designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+
+              <div class="team">
+                  <img src="img/Jean.jpg" alt="Jean Fraga">
+                  <div class="team-info">
+                      <h3>Data Engineer</h3>
+                      <h4>Jean Fraga</h4>
+                      <p>Jean designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+
+              <div class="team">
+                  <img src="img/Amer.jpg" alt="Amer Mahyoub">
+                  <div class="team-info">
+                      <h3>Data Engineer</h3>
+                      <h4>Amer Mahyoub</h4>
+                      <p>Amer designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+              
+              <div class="team">
+                  <img src="img/Mu.jpg" alt="Mu Choi">
+                  <div class="team-info">
+                      <h3>Data Engineer</h3>
+                      <h4>Mu Choi</h4>
+                      <p>Mu designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+              
+              <div class="team">
+                  <img src="img/Cori.jpg" alt="Cori Sternberg">
+                  <div class="team-info">
+                      <h3>Backend Developer</h3>
+                      <h4>Cori Sternberg</h4>
+                      <p>Cori designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+              
+              <div class="team">
+                  <img src="img/Luis.png" alt="Luis Mendes">
+                  <div class="team-info">
+                      <h3>Backend Developer</h3>
+                      <h4>Luis Mendes</h4>
+                      <p>Luis designed the backend using Node, building out endpoints for the login system and developing data models to communicate to the React App.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+  
+              <div class="team">
+                  <img src="img/Cody.jpg" alt="Cody Brewer">
+                  <div class="team-info">
+                      <h3>Web React Developer II</h3>
+                      <h4>Cody Brewer</h4>
+                      <p>Cody architected the frontend React app, pulling in data from the backend and setting up the login page to handle tokens.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+  
+              <div class="team">
+                  <img src="img/Phil.jpg" alt="Phillip MacEachron">
+                  <div class="team-info">
+                      <h3>Web React Developer I</h3>
+                      <h4>Phillip MacEachron</h4>
+                      <p>Phillip managed the front end styling of the React app, built the login pages, and utilized React State Management and animation/event libraries.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+  
+              <div class="team">
+                  <img src="img/Shu.jpg" alt="Shu Fu Chen">
+                  <div class="team-info">
+                      <h3>Web UI Developer</h3>
+                      <h4>Shu Fu Chen</h4>
+                      <p>Shu Fu built this 2-page marketing site, including coming up with the design and implementing it using semantic HTML and the LESS CSS preprocessor. </p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+  
+              <div class="team">
+                  <img src="img/Jay.jpg" alt="Jay Leach">
+                  <div class="team-info">
+                      <h3>Project Lead</h3>
+                      <h4>Jay Leach</h4>
+                      <p>Jay managed the team, holding daily standup meetings and ensuring team members were clear on their responsibilities and made proper use of Github and Trello.</p>
+                  </div>
+                  <div class="social-medias">
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+              </div>
+  
+          </div>
+  
+      </section>
+    </div>
+    <footer>
+        <div class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+      </div>
+      <div><p>Copyright @ 2019 Med-cabinet</p></div>
+    </footer> <!-- close footer div -->
+</body>
+</html>
