@@ -1,82 +1,100 @@
 // Navigation Styles here
 .navbar {
-  background-color:  @blue-green;
-  overflow: hidden;
-  height: 63px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px dashed silver;
-  
-  .logo {
+    background-color:  @blue-green;
+    overflow: hidden;
+    height: 63px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 9rem;
-
-    h1 {
-      font-size: 25px;
-      color: @white;
-    }
-  }
-
-  a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-    &:hover {
-      background-color: #ddd;
-      color: #000;
-    }
-  }
-  
-  ul {
-    margin: 8px 0 0 0;
-    list-style: none;
-    display:flex;
     justify-content: space-between;
+    border-bottom: 2px dashed silver;
+  
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 9rem;
 
-    
-  } 
+        h1 {
+          font-size: 25px;
+          color: @white;
+        
+          @media @phone {
+          display:none
+          }
+        }
+    }
+
+    a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+        &:hover {
+          background-color: #ddd;
+          color: #000;
+        }
+    }
+  
+    ul {
+        margin: 8px 0 0 0;
+        list-style: none;
+        display:flex;
+        justify-content: space-between;
+
+        @media @phone {
+          display: none;
+        }
+    } 
 }
 
 .side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: @facebook-blue;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-
-  a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #ccc;
-    display:block;
-    transition: 0.3s;
-
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  .btn-close {
-    position: absolute;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    right: 22px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+    left: 0;
+    background-color: @facebook-blue;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+
+    a {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #ccc;
+        display:block;
+        transition: 0.3s;
+
+        &:hover {
+          color: #fff;
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .sign-up {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .account {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
 }
 
 

@@ -19,14 +19,28 @@
   justify-content: flex-end;
   margin: 20px;
 
+  @media @tablet {
+    justify-content: flex-start;
+  }
+
   .landing-content {
     margin: 20px;
     padding: 10px;
     color: @shark;
     font-weight: 2rem;
 
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
     h1 {
       padding: 20px 20px 20px 0;
+
+      @media @phone {
+        display: none;
+      }
     }
 
     .landing-btn-groups {
@@ -50,12 +64,12 @@
 
 .how-it-works {
   width: 85%;
-  height: 450px;
   padding: 0 20px 20px 20px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
   
 
   h2 {
@@ -66,7 +80,10 @@
   .features {
     display: flex;
     justify-content: space-between;
-    height: 80%;
+
+    @media @tablet {
+      flex-direction: column;
+    }
 
     .feature-boxes {
       width: 30%;
@@ -75,6 +92,16 @@
       flex-direction: column;
       align-items: center;
       border: 2px solid @blue-green;
+
+      @media @tablet {
+        width:100%;
+        margin: 20px 0;
+      }
+
+      @media @phone {
+        justify-content: center;
+        text-align: center;
+      }
 
       i {
         font-size: 10rem;
@@ -97,7 +124,6 @@
 
 .popular-strains {
   width: 85%;
-  height: 350px;
   margin: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
@@ -107,10 +133,22 @@
   border-left: 2px solid @blue-green;
   border-bottom: 5px solid #af7817;
 
+  @media @phone {
+    border: none;
+
+  }
 
   h3 {
     font-size: 4rem;
     margin: 20px 0;
+
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+
+    @media @phone {
+      font-size: 1.2rem;
+    }
   }
 
   .examples-container {
@@ -119,8 +157,18 @@
     width: 100%;
     padding: 50px;
 
+    @media @phone {
+      flex-direction: column;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
     .example-strains {
-      .flex(column, space-between, none)
+      .flex(column, space-between, none);
+
+      @media @phone {
+        margin: 20px;
+      }
     }
   }
 }
@@ -130,10 +178,12 @@
   padding: 20px;
   overflow: auto;
   display:flex;
-  //flex-direction: column;
-  //justify-content: space-evenly;
   align-items: center;
   margin: 40px 30px 20px 30px;
+
+  @media @phone {
+    margin: 0;
+  }
   
   a {
     color: white;
@@ -141,5 +191,10 @@
     font-size: 1.6rem;
     padding: 10px;
     background:#17A2B8;
+
+    @media @phone {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

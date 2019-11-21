@@ -1,6 +1,10 @@
 .about-this-project{
     padding: 20px 0;
 
+    @media @phone {
+        margin-bottom: -50px;
+    }
+
     .this-project-container{
         width: 100%;
 
@@ -12,6 +16,7 @@
             margin: 10px 0;
             text-align: center;
         }
+
         .github{
             width: 5.6rem;
             margin: 0 auto;
@@ -31,41 +36,52 @@
         max-height: 200px;
         margin-top: 30px;
         padding-top: 2rem;
+
         .flex(row, space-evenly, none);
         .limit-max-width();
+
+        @media @phone {
+            display: none;
+        }
 
         img {
             width: 30%;
             height: 170px;
         }
     }
-    
 
     .about-items{
-        .flex(column, space-evenly, wrap);
-        align-items: flex-start;
+        align-items: center;
 
+        .flex(row, space-evenly, wrap);
         .limit-max-width();
 
-        @media @tablet{
-            flex-direction: row;
+        @media @tablet {
+            flex-direction: column;
         }
 
         .about-item{
             width: 30%;
-            height: 170px;
+
+            @media @desktop {
+                height: 250px;
+            }
             
             h3{
                 font-size: 1.6rem;
                 
                 sup {
-                    font-size: 2rem;
+                    font-size: 5rem;
                     color: @eastern-blue;
                 }
             }
 
             p {
                 width: 80%;
+            }
+
+            @media @tablet {
+                width: 100%;
             }
         }
 
@@ -76,17 +92,19 @@
 }
 
 .meet-the-team{
-    background: @section-background;
-
+    background: @silver;
     padding: 50px 0 20px 0;
+
+    @media @phone {
+        width: 100%;
+    }
 
     .team-members{
         width: 100%;
-        
-        max-width: @max-content-width;
+        max-width: 1300px;
         margin: 20px auto;
 
-        .flex(column, space-evenly, none);
+        .flex(row, space-evenly, wrap);
     
         @media @tablet{
             flex-direction: row;
@@ -104,31 +122,36 @@
     }
 
     .team{
-        .flex(column, center, none);
-
         margin: 20px 0;
         padding: 10px 30;
         border-left: 3.5px solid @eastern-blue;
         width: 45%;
 
+        .flex(column, center, none);
+
         @media @tablet{
             width: 48%;
         }
 
+        @media @phone {
+            width: 100%;
+        }
+
         .team-info{
             margin: 10px 20px;
-            
             text-align: center;
         }
     }
 
     .social-medias{
         a{
-            .link();
             font-size: 3.5rem;
             margin: 5px 10px;
+            
+            .link();
         }
     }
+    
     img{
         width: 100px;
         border-radius: 100px;
