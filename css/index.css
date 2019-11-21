@@ -177,6 +177,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 9rem;
 }
 .navbar .logo h1 {
   font-size: 25px;
@@ -231,15 +232,6 @@ img {
   right: 22px;
   font-size: 36px;
   margin-left: 50px;
-}
-.search-box {
-  margin: 8px 0 0 0;
-  padding-top: 10px;
-}
-input [type=text] {
-  padding: 7px;
-  border: none;
-  font-size: 16px;
 }
 footer {
   width: 100%;
@@ -416,11 +408,12 @@ footer div p {
 .about-this-project .this-project-container .github {
   width: 5.6rem;
   margin: 0 auto;
+  padding: 20px 0;
 }
 .about-this-project .this-project-container .github a {
   display: inline-block;
   text-decoration: none;
-  color: #9370DB;
+  color: #38B2AC;
   font-size: 2rem;
   width: 5.6rem;
   font-size: 6.5rem;
@@ -429,6 +422,7 @@ footer div p {
   max-width: 90%;
   max-height: 200px;
   margin-top: 30px;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -445,7 +439,7 @@ footer div p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex-wrap: none;
+  flex-wrap: wrap;
   align-items: center;
   align-items: flex-start;
   max-width: 1300px;
@@ -457,9 +451,18 @@ footer div p {
   }
 }
 .about-this-project .about-items .about-item {
-  margin: 10px 10px;
-  padding: 3px 10px;
-  border-left: 4px solid lightgrey;
+  width: 30%;
+  height: 170px;
+}
+.about-this-project .about-items .about-item h3 {
+  font-size: 1.6rem;
+}
+.about-this-project .about-items .about-item h3 sup {
+  font-size: 2rem;
+  color: #17A2B8;
+}
+.about-this-project .about-items .about-item p {
+  width: 80%;
 }
 .about-this-project .about-items h3 {
   margin-bottom: 8px;
@@ -499,6 +502,8 @@ footer div p {
   align-items: center;
   margin: 20px 0;
   padding: 10px 30;
+  border-left: 3.5px solid #17A2B8;
+  width: 45%;
 }
 @media (min-width: 700px) {
   .meet-the-team .team {
@@ -511,7 +516,7 @@ footer div p {
 }
 .meet-the-team .social-medias a {
   text-decoration: none;
-  color: #9370DB;
+  color: #38B2AC;
   font-size: 2rem;
   font-size: 3.5rem;
   margin: 5px 10px;
